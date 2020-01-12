@@ -1,4 +1,4 @@
-// geometry
+// vector
 // https://youtu.be/UWbGRhF3Ozw?t=9564
 const double eps = 1e-9;
 struct V {
