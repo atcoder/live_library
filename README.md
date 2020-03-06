@@ -15,6 +15,7 @@ AtCoder解説放送ライブラリ集
 |名前|コード|説明|
 |:--|:--|:--|
 |BIT|[bit.cpp](bit.cpp)|Binary Indexed Tree (Fenwick Tree)|
+|UnionFind|[uf.cpp](uf.cpp)|Union Find|
 
 ### 数学
 |名前|コード|説明|
@@ -35,4 +36,6 @@ AtCoder解説放送ライブラリ集
 ### 幾何
 |名前|コード|説明|
 |:--|:--|:--|
-|Vector|[vector.cpp](vector.cpp)|ベクトル（点を扱う際にも使う）|
+|基本|[geom.cpp](geom.cpp)|幾何のベース＋目次|
+|Vector|[geom/vector.cpp](geom/vector.cpp)|ベクトル（点を扱う際にも使う）|
+|Circle|[geom/circle.cpp](geom/circle.cpp)|円|

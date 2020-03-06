@@ -1,6 +1,5 @@
-// vector
+// Vector
 // https://youtu.be/UWbGRhF3Ozw?t=9564
-const double eps = 1e-9;
 struct V {
   double x, y;
   V(double x=0, double y=0): x(x), y(y) {}
@@ -16,7 +15,7 @@ struct V {
   double cross(const V& v) const { return x*v.y - v.x*y;}
   double norm2() const { return x*x + y*y;}
   double norm() const { return sqrt(norm2());}
-  
+  V rotate90() const { return V(y, -x);}
   int ort() const { // orthant
     if (abs(x) < eps && abs(y) < eps) return 0;
     if (y > 0) return x>0 ? 1 : 2;
