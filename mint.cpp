@@ -3,6 +3,7 @@
 // https://youtu.be/ERZuLAxZffQ?t=4807 : optimize
 // https://youtu.be/8uowVvQ_-Mo?t=1329 : division
 const int mod = 1000000007;
+const int mod = 998244353;
 struct mint {
   ll x; // typedef long long ll;
   mint(ll x=0):x((x%mod+mod)%mod){}
@@ -15,22 +16,10 @@ struct mint {
     if ((x += mod-a.x) >= mod) x -= mod;
     return *this;
   }
-  mint& operator*=(const mint a) {
-    (x *= a.x) %= mod;
-    return *this;
-  }
-  mint operator+(const mint a) const {
-    mint res(*this);
-    return res+=a;
-  }
-  mint operator-(const mint a) const {
-    mint res(*this);
-    return res-=a;
-  }
-  mint operator*(const mint a) const {
-    mint res(*this);
-    return res*=a;
-  }
+  mint& operator*=(const mint a) { (x *= a.x) %= mod; return *this;}
+  mint operator+(const mint a) const { return mint(*this) += a;}
+  mint operator-(const mint a) const { return mint(*this) -= a;}
+  mint operator*(const mint a) const { return mint(*this) *= a;}
   mint pow(ll t) const {
     if (!t) return 1;
     mint a = pow(t>>1);
@@ -40,14 +29,9 @@ struct mint {
   }
 
   // for prime mod
-  mint inv() const {
-    return pow(mod-2);
-  }
-  mint& operator/=(const mint a) {
-    return (*this) *= a.inv();
-  }
-  mint operator/(const mint a) const {
-    mint res(*this);
-    return res/=a;
-  }
+  mint inv() const { return pow(mod-2);}
+  mint& operator/=(const mint a) { return *this *= a.inv();}
+  mint operator/(const mint a) const { return mint(*this) /= a;}
 };
+istream& operator>>(istream& is, const mint& a) { return is >> a.x;}
+ostream& operator<<(ostream& os, const mint& a) { return os << a.x;}
