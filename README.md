@@ -27,6 +27,7 @@ AtCoder解説放送ライブラリ集
 |名前|コード|説明|
 |:--|:--|:--|
 |LCA|[lca.cpp](lca.cpp)|最小共通祖先|
+|全方位木DP|[rerooting.cpp](rerooting.cpp)|全方位木DP|
 
 ### 文字列
 |名前|コード|説明|
