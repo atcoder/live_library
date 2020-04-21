@@ -17,4 +17,7 @@ struct BIT {
     }
     return x;
   }
+  T sum(int l, int r) {
+    return sum(r-1) - sum(l-1);
+  }
 };
