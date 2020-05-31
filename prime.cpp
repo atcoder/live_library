@@ -36,4 +36,14 @@ struct Sieve {
     }
     return res;
   }
+  vector<pair<ll,int>> factor(ll x) {
+    vector<pair<ll,int>> res;
+    for (int p : primes) {
+      int y = 0;
+      while (x%p == 0) x /= p, ++y;
+      if (y != 0) res.emplace_back(p,y);
+    }
+    if (x != 1) res.emplace_back(x,1);
+    return res;
+  }
 };
