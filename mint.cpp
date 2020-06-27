@@ -33,5 +33,5 @@ struct mint {
   mint& operator/=(const mint a) { return *this *= a.inv();}
   mint operator/(const mint a) const { return mint(*this) /= a;}
 };
-istream& operator>>(istream& is, const mint& a) { return is >> a.x;}
+istream& operator>>(istream& is, mint& a) { return is >> a.x;}
 ostream& operator<<(ostream& os, const mint& a) { return os << a.x;}
