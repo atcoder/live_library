@@ -22,6 +22,7 @@ AtCoder解説放送ライブラリ集
 |:--|:--|:--|
 |GCD/LCM|[gcd.cpp](gcd.cpp)|最大公約数と最小公倍数|
 |Combination|[comb.cpp](comb.cpp)|nCkをmod素数で求める|
+|Matrix|[mat.cpp](mat.cpp)|行列|
 
 ### グラフ
 |名前|コード|説明|
