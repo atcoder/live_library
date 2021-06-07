@@ -1,3 +1,4 @@
+// https://youtu.be/ylWYSurx10A?t=2352
 template<typename T>
 struct Matrix {
   int h, w;
@@ -19,7 +20,7 @@ struct Matrix {
     }
     return r;
   }
-  Matrix pow(int t) const {
+  Matrix pow(long long t) const {
     assert(h == w);
     if (!t) return Matrix(h,h).unit();
     if (t == 1) return *this;
