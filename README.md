@@ -10,6 +10,8 @@ AtCoder解説放送ライブラリ集
 |:--|:--|:--|
 |テンプレート|[template.cpp](template.cpp)||
 |ModInt|[mint.cpp](mint.cpp)|自動でmodを取ってくれる整数型|
+|座標圧縮|[cc.cpp](cc.cpp)|座標に昇順に番号を振る|
+|順列|[perm.cpp](perm.cpp)|置換の合成や逆元等|
 
 ### データ構造
 |名前|コード|説明|
@@ -23,6 +25,7 @@ AtCoder解説放送ライブラリ集
 |GCD/LCM|[gcd.cpp](gcd.cpp)|最大公約数と最小公倍数|
 |Combination|[comb.cpp](comb.cpp)|nCkをmod素数で求める|
 |Matrix|[mat.cpp](mat.cpp)|行列|
+|素数|[prime.cpp](prime.cpp)|素数列挙と素因数分解|
 
 ### グラフ
 |名前|コード|説明|
