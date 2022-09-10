@@ -37,6 +37,8 @@ AtCoder解説放送ライブラリ集
 |名前|コード|説明|
 |:--|:--|:--|
 |KMP|[mp.cpp](mp.cpp)|文字列検索アルゴリズム（正確にはMP）|
+|Z|[z.cpp](z.cpp)|Z-algorithm|
+|Aho-Corasick|[aho.cpp](aho.cpp)|文字列集合へのマッチを検出する|
 
 ### 幾何
 |名前|コード|説明|
