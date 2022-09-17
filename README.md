@@ -26,6 +26,7 @@ AtCoder解説放送ライブラリ集
 |Combination|[comb.cpp](comb.cpp)|nCkをmod素数で求める|
 |Matrix|[mat.cpp](mat.cpp)|行列|
 |素数|[prime.cpp](prime.cpp)|素数列挙と素因数分解|
+|FPS|[fps.cpp](fps.cpp)|形式的べき級数|
 
 ### グラフ
 |名前|コード|説明|
