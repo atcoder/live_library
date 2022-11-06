@@ -5,7 +5,7 @@ struct modinv {
   int n; vector<mint> d;
   modinv(): n(2), d({0,1}) {}
   mint operator()(int i) {
-    while (n <= i) d.push_back(-d[mint::mod%n]*(mint::mod/n)), ++n;
+    while (n <= i) d.push_back(-d[mint::mod()%n]*(mint::mod()/n)), ++n;
     return d[i];
   }
   mint operator[](int i) const { return d[i];}
