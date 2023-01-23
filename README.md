@@ -46,4 +46,5 @@ AtCoder解説放送ライブラリ集
 |:--|:--|:--|
 |基本|[geom.cpp](geom.cpp)|幾何のベース＋目次|
 |Vector|[geom/vector.cpp](geom/vector.cpp)|ベクトル（点を扱う際にも使う）|
+|Line|[geom/line.cpp](geom/line.cpp)|直線・線分|
 |Circle|[geom/circle.cpp](geom/circle.cpp)|円|

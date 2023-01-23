@@ -15,6 +15,7 @@ struct V {
   double cross(const V& v) const { return x*v.y - v.x*y;}
   double norm2() const { return x*x + y*y;}
   double norm() const { return sqrt(norm2());}
+  V normalize() const { return *this/norm();}
   V rotate90() const { return V(y, -x);}
   int ort() const { // orthant
     if (abs(x) < eps && abs(y) < eps) return 0;
