@@ -17,7 +17,8 @@ AtCoder解説放送ライブラリ集
 |名前|コード|説明|
 |:--|:--|:--|
 |BIT|[bit.cpp](bit.cpp)|Binary Indexed Tree (Fenwick Tree)|
-|UnionFind|[uf.cpp](uf.cpp)|Union Find|
+|UnionFind|[uf.cpp](uf.cpp)|Union Find (DSU)|
+|CHT|[cht.cpp](cht.cpp)|Convex Hull Trick|
 
 ### 数学
 |名前|コード|説明|
