@@ -13,7 +13,7 @@ struct Line {
     if (dir().cross(p-s) > eps) return +1;
     if (dir().cross(p-s) < -eps) return -1;
     if (dir().dot(p-s) < -eps) return +2;
-    if (dir().norm()+eps < (p-s).norm()) return -2;
+    if (dir().dot(t-p) < -eps) return -2;
     return 0;
   }
   bool touch(const Line& l) const {
