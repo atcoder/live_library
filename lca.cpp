@@ -1,6 +1,6 @@
 // Lowest Common Ancestor by binary lifting
 // https://youtu.be/8uowVvQ_-Mo?t=4306
-template<typename T> // T: type of cost
+template<typename T=int> // T: type of cost
 struct lca {
   int n, root, l;
   vector<vector<int>> to;
@@ -38,30 +38,29 @@ struct lca {
     }
   }
   // LCA
-  int operator()(int a, int b) {
-    if (dep[a] > dep[b]) swap(a,b);
-    int gap = dep[b]-dep[a];
+  int up(int v, int k) {
     for (int i = l-1; i >= 0; --i) {
       int len = 1<<i;
-      if (gap >= len) {
-        gap -= len;
-        b = par[b][i];
-      }
+      if (k >= len) k -= len, v = par[v][i];
     }
+    return v;
+  }
+  int operator()(int a, int b) {
+    if (dep[a] > dep[b]) swap(a,b);
+    b = up(b, dep[b]-dep[a]);
     if (a == b) return a;
     for (int i = l-1; i >= 0; --i) {
-      int na = par[a][i];
-      int nb = par[b][i];
+      int na = par[a][i], nb = par[b][i];
       if (na != nb) a = na, b = nb;
     }
     return par[a][0];
   }
   int length(int a, int b) {
-    int c = lca(a,b);
+    int c = (*this)(a,b);
     return dep[a]+dep[b]-dep[c]*2;
   }
   T dist(int a, int b) {
-    int c = lca(a,b);
+    int c = (*this)(a,b);
     return costs[a]+costs[b]-costs[c]*2;
   }
 };
