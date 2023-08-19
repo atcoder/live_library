@@ -24,6 +24,7 @@ AtCoder解説放送ライブラリ集
 |名前|コード|説明|
 |:--|:--|:--|
 |GCD/LCM|[gcd.cpp](gcd.cpp)|最大公約数と最小公倍数|
+|extgcd|[extgcd.cpp](extgcd.cpp)|Ai+Bj=gcd(A,B)なるi,jを求める|
 |Combination|[comb.cpp](comb.cpp)|nCkをmod素数で求める|
 |Matrix|[mat.cpp](mat.cpp)|行列|
 |素数|[prime.cpp](prime.cpp)|素数列挙と素因数分解|
